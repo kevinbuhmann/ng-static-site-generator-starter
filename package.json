@@ -1,0 +1,39 @@
+{
+  "name": "ng-static-site-generator-starter",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "firebase serve",
+    "clean": "rimraf dist",
+    "lint": "tslint --project tsconfig.json --type-check",
+    "prebuild": "npm run clean && npm run lint",
+    "build": "ng-static-site-generator build",
+    "prewatch": "npm run clean",
+    "watch": "ng-static-site-generator watch",
+    "deploy": "yarn run build && firebase deploy"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "4.2.4",
+    "@angular/common": "4.2.4",
+    "@angular/compiler": "4.2.4",
+    "@angular/core": "4.2.4",
+    "@angular/http": "4.2.4",
+    "@angular/platform-browser": "4.2.4",
+    "@angular/platform-browser-dynamic": "4.2.4",
+    "@angular/platform-server": "4.2.4",
+    "@angular/router": "4.2.4",
+    "core-js": "2.4.1",
+    "ng-static-site-generator": "0.7.0",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.4.1",
+    "zone.js": "0.8.12"
+  },
+  "devDependencies": {
+    "codelyzer": "2.0.1",
+    "firebase-tools": "3.9.1",
+    "rimraf": "2.6.1",
+    "tslint": "4.5.1",
+    "typescript": "2.3.4"
+  }
+}

@@ -1,0 +1,5 @@
+<div *ngFor="let blogEntry of blogList | async">
+  {{ blogEntry.date | date }}
+  <h3><a [routerLink]="blogEntry.url">{{ blogEntry.title }}</a></h3>
+  <p>{{ blogEntry.description }}</p>
+</div>

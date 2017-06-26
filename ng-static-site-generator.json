@@ -1,0 +1,11 @@
+{
+  "distPath": "./dist",
+  "blogPath": "./src/blog",
+  "mainPath": "./src/main.ts",
+  "polyfillsPath": "./src/polyfills.ts",
+  "stylesPath": "./src/styles.scss",
+  "templatePath": "./src/index.html",
+  "appModule": "./src/app/app.module#AppModule",
+  "appRoutes": "./src/app/app-routing.module#routes",
+  "appComponent": "./src/app/app.component#AppComponent"
+}

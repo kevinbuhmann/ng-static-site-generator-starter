@@ -1,0 +1,16 @@
+<ng-container *ngIf="notFound">
+  <app-not-found></app-not-found>
+</ng-container>
+
+<ng-container *ngIf="blogEntry | async; let blogEntry">
+  <p>
+    <b>{{ blogEntry.date | date }}</b>
+  </p>
+
+  <blockquote *ngIf="blogEntry.description">
+    <p>{{ blogEntry.description }}</p>
+  </blockquote>
+
+  <div [innerHTML]="blogEntry.body"></div>
+</ng-container>
+
